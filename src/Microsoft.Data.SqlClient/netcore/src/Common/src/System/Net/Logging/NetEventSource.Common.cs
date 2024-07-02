@@ -48,6 +48,7 @@ namespace System.Net
 #if net462
     [SecuritySafeCritical]
 #endif
+    [EventSource(Name = "Criteo.Data.SqlClient.NetEventSource")]
     internal sealed partial class NetEventSource : EventSource
     {
         /// <summary>The single event source instance to use for all logging.</summary>

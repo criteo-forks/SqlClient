@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <MdsVersionDefault>5.2.0</MdsVersionDefault>
+    <MdsVersionDefault>5.2.1</MdsVersionDefault>
     <BuildNumber Condition="'$(BuildNumber)' == ''">0</BuildNumber>
     <AssemblyFileVersion Condition="'$(AssemblyFileVersion)' == ''">$(MdsVersionDefault).$(BuildNumber)</AssemblyFileVersion>
     <FileVersion>$(AssemblyFileVersion)</FileVersion>
@@ -9,7 +9,7 @@
     <!-- Should only be changed in future when a non-backwards compatible driver is released. -->
     <!-- Future Assembly Version values shall be Major.Minor.0.0; e.g. 4.0.0.0 -->
     <AssemblyVersion>5.0.0.0</AssemblyVersion>
-    <NugetPackageVersion Condition="'$(NugetPackageVersion)' == ''">$(MdsVersionDefault)-dev</NugetPackageVersion>
+    <NugetPackageVersion Condition="'$(NugetPackageVersion)' == ''">$(MdsVersionDefault)-criteo1</NugetPackageVersion>
     <Version>$(NugetPackageVersion)</Version>
   </PropertyGroup>
   <PropertyGroup>
